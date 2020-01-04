@@ -1,0 +1,221 @@
+/* Photography Portfolio Style Sheet */
+
+html {
+	margin:0;
+	padding:0;
+	position:relative; 
+  	min-height: 100%;
+}
+
+
+body {
+	font-family: Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding:0;
+	margin:0;
+	margin-bottom:100px;
+}
+
+/* Global */
+main {
+	width:70%;
+	margin:0 auto;
+
+}
+
+
+ul{ 
+	list-style-type:none;
+	margin:0;
+	padding: 0;
+}
+
+
+/* Header Styles*/
+header{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	min-height: 70px;
+	border-bottom:black 3px solid;
+	text-align: center;
+	background: #ffb3b3;
+}
+
+header h1 {
+	text-shadow: 2px 2px 5px white;
+	font-weight:bold;
+	font-size: 36px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom:10px;
+}
+
+/*header links*/
+
+
+header li{ /*nav bar list items*/
+	display:inline;
+	padding:0 20px 0 20px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size:14px;
+}
+
+header a{ /* nav bar links*/
+	color:black;
+	text-decoration: none;
+}
+
+header .current a{ /*currently selected link is colored*/
+	color:white;
+	
+}
+
+header a:hover{ /*nav bar links appear yellow when hovered over */
+	color:white;
+}
+
+
+/*main section styling*/
+
+main h2{
+	text-align: center;
+	padding-bottom: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+	text-transform: uppercase;
+}
+
+
+/*about me image*/
+
+.self{
+	display: block;
+ 	margin-left: 25px;
+ 	margin-right:100px;
+  	width: 40%;
+  	float:right;
+}
+
+.about{
+	padding-top:30px;
+	margin-left:150px;
+}
+
+/* styling contact form buttons */
+
+
+input[type=submit], input[type=reset]{
+	background-color: #35424a;
+	border:none;
+	color:#ffffff;
+	padding:16px 32px;
+	text-decoration: none;
+	margin-top:15px;
+	margin-right:5px;
+	cursor:pointer;
+}
+
+
+
+
+/*Footer*/
+
+#main-footer {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:100px;
+
+	color:black;
+	background-color:#ffb3b3;
+	
+}
+
+.footer_text{
+	padding-top:25px;
+	text-align: center; 
+	}
+
+
+.footer_icons img{
+  position: absolute;
+  right: 0px;
+  width: 30px;
+  padding-top: 25px;
+  padding-right:10px;
+}
+
+#portfolio{
+	width:100%;
+	padding-bottom: 25px;
+	
+}
+
+/*Responsive Grid Layout for Portfolio page */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 24%;
+  max-width: 24%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 48%;
+    max-width: 48%;
+  }
+  
+  .self{
+  	width:80%;
+  	float:none;
+  }
+  .about{
+	padding-top:30px;
+	padding-bottom:20px;
+	margin:auto;
+}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 98%;
+    max-width: 98%;
+  }
+
+  header li{ /*nav bar list items*/
+	display:block;
+}
+header{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+header h1 {
+	padding-bottom:0px;
+	font-size: 24px;
+}
+
+}
+
+
+
+
